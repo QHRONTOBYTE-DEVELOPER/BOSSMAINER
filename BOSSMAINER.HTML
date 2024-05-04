@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BOSSMAINER</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: black;
+  }
+  .header, .nav, .nav a {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-around;
+  }
+  .nav a {
+    text-decoration: none;
+    color: white;
+  }
+  .content {
+    margin: 15px;
+    padding: 15px;
+    background-color: #333;
+    border: 2px solid blue;
+  }
+  footer {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>BOSSMAINER</h1>
+  </div>
+  <div class="nav">
+    <a href="#home">HOME</a>
+    <a href="#network">NETWORK</a>
+    <a href="#buildings">BUILDINGS</a>
+    <a href="#store">STORE</a>
+    <a href="#contact">CONTACT</a>
+    <a href="#about">ABOUT</a>
+  </div>
+  <div id="home" class="content">
+    <h2>Welcome Home</h2>
+    <p>BOSSMAINER is your premier destination for exploring the digital world. Join us on a journey of discovery and innovation.</p>
+  </div>
+  <div id="network" class="content">
+    <h2>Our Network</h2>
+    <p>Connect with professionals and enthusiasts in the digital realm. Our network is vast and full of opportunities.</p>
+  </div>
+  <div id="buildings" class="content">
+    <h2>Our Buildings</h2>
+    <p>Our infrastructure is the foundation of our digital services. State-of-the-art, secure, and reliable.</p>
+  </div>
+  <div id="store" class="content">
+    <h2>Online Store</h2>
+    <p>Find the tools you need for your digital projects. Our store offers a wide selection of high-quality products.</p>
+  </div>
+  <div id="contact" class="content">
+    <h2>Contact Us</h2>
+    <p>Questions or feedback? Our team is ready to assist you. Reach out to us anytime.</p>
+  </div>
+  <div id="about" class="content">
+    <h2>About BOSSMAINER</h2>
+    <p>Learn about our mission, our team, and how we're contributing to the digital age.</p>
+  </div>
+  <footer>
+    <p>Current Date and Time: <span id="datetime"></span></p>
+    <script>
+      document.getElementById('datetime').innerText = new Date().toLocaleString();
+    </script>
+  </footer>
+</body>
+</html>
